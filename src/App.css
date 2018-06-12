@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English');
+.hud {
+  background-color: black;
+  box-shadow: 5px 5px 5px #aaa;
+  font-family: 'IM Fell English', serif;
+  font-size: 33px;
+  min-height: 188px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  transition: height 0.5s ease;
+  width: 100%;
+}
+
+.hud input {
+  font-size: 33px;
+}
+
+.hud .selection,
+.hud .selection-message,
+.hud .annotations {
+  color: white;
+  width: 100%;
+}
+
+.hud .selection-message {
+  font-style: italic;
+  height: 111px;
+  line-height: 111px;
+}
+
+.hud .annotations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hud .annotations input.root {
+  border: none;
+  border-radius: 50px;
+  font-family: monospace;
+  width: 69px;
+}
+
+.hud .annotations div input:nth-child(1) {
+  margin-left: 10px;
+}
+
+.hud .annotations div input:nth-child(2) {
+  margin-right: 10px;
+}
+
+.hud input {
+  border: none;
+  font-family: 'IM Fell English', serif;
+  margin: 1px;
+  text-align: center;
+  width: 100px;
+}
+
+button.export {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: 'IM Fell English', serif;
+  font-size: 33px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+button.export:hover {
+  background-color: white;
+  color: black;
+}
+
+div.error {
+  color: red;
+  font-size: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.verovio {
+  padding-top: 200px;
+  text-align: center;
+}
+
+.annotation {
+  background-color: darkslategrey;
+  color: aqua;
+  display: table-cell;
+  font-family: 'Helvetica';
+  font-size: 150px;
+  opacity: 0.5;
+  padding: 0.25em 0.3em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.correctedAnnotation {
+  background-color: darkred;
+  color: goldenrod;
+  display: table-cell;
+  font-family: 'Helvetica';
+  font-size: 150px;
+  opacity: 0.5;
+  padding: 0.25em 0.3em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+foreignObject {
+  overflow: visible;
+}
+
+html {
+  user-select: none;
+}
+
+.hud td {
+  padding: 0 10px;
+}
